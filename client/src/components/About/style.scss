@@ -1,0 +1,117 @@
+.aboutContainer{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+    .aboutImg{
+        width: 340px;
+        border-radius: 1.5rem;
+        justify-content: center;
+    }
+    .aboutData{
+        .aboutInfo{
+            grid-template-columns: repeat(3, 140px);
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            .aboutBox{
+                background-color: rgb(245, 249, 255);
+                border: 1px solid rgba(0,0,0, 0.1);
+                border-radius: 0.75rem;
+                text-align: center;
+                padding: 1rem 1.25rem;
+                .aboutIcon{
+                    font-size: 1.5rem;
+                    color: #000;
+                    margin-bottom: 0.5rem;
+                }
+                .aboutTitle{
+                    font-size: 0.850rem;
+                    font-weight: 600;
+                }
+                .aboutSubtitle{
+                    font-size: 0.645rem;
+                }
+
+            }
+            
+
+        }
+        .aboutDescription{
+            padding: 0 4rem 0 0;
+            margin-bottom: 2.5rem;
+        }
+
+
+    }
+}
+@media screen and (max-width: 992px) {
+    .aboutContainer{
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+        .aboutImg{
+            width: 220px; //**
+
+        }
+        .aboutData{
+            text-align: center;
+            .aboutDescription{
+                padding: 0 5rem;
+                margin-bottom: 2rem;
+
+            }
+            .aboutInfo{
+                justify-content: center;
+                .aboutBox{
+                    padding: 0.75rem 0.5rem;
+                    .aboutIcon{
+
+                    }
+                    .aboutTitle{
+
+                    }
+                    .aboutSubtitle{
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .aboutContainer {
+    
+            .aboutImg {
+    
+            }
+    
+            .aboutData {
+    
+                .aboutDescription {
+                    padding: 0;
+    
+                }
+    
+                .aboutInfo {
+                    grid-template-columns: repeat(3,1fr);
+    
+                    .aboutBox {
+    
+                        .aboutIcon {}
+    
+                        .aboutTitle {}
+    
+                        .aboutSubtitle {}
+                    }
+                }
+            }
+        }
+
+}
+
+@media screen and (max-width: 350px) {
+    .aboutInfo{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+}

@@ -1,0 +1,69 @@
+.qualificationContainer{
+    max-width: 768px;
+    .qualificationTabs{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        .qualificationButton{
+            font-size: 1.10rem;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.533);
+            margin: 0 1rem;
+            cursor: pointer;
+            transition: .3s;
+            &:hover {
+                color: #000;
+            }
+            .qualificationIcon{
+                font-size: 1.8rem;
+                margin-bottom: 0.25rem;
+            }
+            .qualificationActive{
+                color: #000;
+            }
+        }
+    }
+    .qualificationSection{
+        display: grid;
+        grid-template-columns: 0.4fr;
+        justify-content: center;
+        .qualificationContent{
+            display: none;
+            .qualificationData{
+                display: grid;
+                grid-template-columns: 0.6fr max-content 0.6fr;
+                .qualificationTitle{
+                    font-weight: 600;
+                    font-size: 1rem;
+                }
+                .qualificationSubtitle{
+                    display: inline-block;
+                    font-size: 0.865rem;
+                    color: gray;
+                }
+                .qualificationCalendar{
+                    display: flex;
+                    gap: 0.1rem;
+                    font-size: 0.865rem;
+                }
+                .qualificationRounder{
+                    display: inline-block;
+                    width: 11px;
+                    height: 11px;
+                    border-radius: 50%;
+                    background-color: #000;
+                }
+                .qualificationLine{
+                    display: block;
+                    width: 1px;
+                    height: 100%;
+                    background-color: #000;
+                    transform: translate(5px, -6px);
+                }
+            }
+        }
+        .qualificationContentActive{
+            display: block;
+        }
+    }
+}
